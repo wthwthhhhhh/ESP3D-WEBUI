@@ -464,6 +464,21 @@ const commandsQuery = (req, res, SendWS) => {
         return
     }
 
+    if (url.indexOf('ESP701') != -1) {
+        res.json({
+            cmd: '701',
+            status: 'ok',
+            data: {
+                status: 'processing',
+                total: '159694',
+                processed: '6719',
+                type: '2',
+                name: '/ESP3DPrintFile.gcode',
+            },
+        })
+        return
+    }
+
     if (url.indexOf('ESP800') != -1) {
         res.json({
             cmd: '800',
