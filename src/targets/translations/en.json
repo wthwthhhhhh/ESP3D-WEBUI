@@ -377,5 +377,6 @@
     "ssdp": "SSDP service",
     "usb-serial baud": "USB serial Baud rate",
     "output": "Output connection",
-    "Total psram mem": "PSRAM memory"
+    "Total psram mem": "PSRAM memory",
+    "language": "Language"
 }

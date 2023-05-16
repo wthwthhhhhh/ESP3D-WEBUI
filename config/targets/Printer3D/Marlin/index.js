@@ -564,6 +564,10 @@ const commandsQuery = (req, res, SendWS) => {
                 { id: 'targetfw', value: 'marlin' },
                 { id: 'FW ver', value: '3.0.0.a111' },
                 { id: 'FW arch', value: 'ESP32' },
+                {
+                    id: 'language',
+                    value: 'English (default)',
+                },
             ],
         })
         return
@@ -875,6 +879,21 @@ const commandsQuery = (req, res, SendWS) => {
                     H: 'bootdelay',
                     S: '40000',
                     M: '0',
+                },
+                {
+                    F: 'system/system',
+                    P: '36',
+                    T: 'S',
+                    V: 'default',
+                    H: 'language',
+                    O: [
+                        {
+                            English: 'default',
+                        },
+                        {
+                            Français: 'fr',
+                        },
+                    ],
                 },
             ],
         })
