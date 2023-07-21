@@ -25,7 +25,7 @@ var pl_lang = false;
 var ptbr_lang = false;
 var ru_lang = false;
 var uk_lang = false;
-var zh_cn_lang = false;
+var zh_cn_lang = true;
 var hu_lang = false;
 var tr_lang = false;
 var zh_tw_lang = false;
@@ -146,7 +146,7 @@ function clearlang() {
         ru_lang = true;
         tr_lang = false;
         uk_lang = true;
-        zh_cn_lang = false;
+        zh_cn_lang = true;
     }
     if ((typeof arg.lang == 'undefined') || (arg.lang == 'all')) {
         en_lang = true;

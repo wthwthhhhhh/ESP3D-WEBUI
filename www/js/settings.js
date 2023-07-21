@@ -641,7 +641,7 @@ function getESPsettingsfailed(error_code, response) {
 function restart_esp() {
   confirmdlg(
     translate_text_item("Please Confirm"),
-    translate_text_item("Restart ESP3D"),
+    translate_text_item("Restart CoolDraw"),
     process_restart_esp
   );
 }

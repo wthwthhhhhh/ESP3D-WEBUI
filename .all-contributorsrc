@@ -271,6 +271,6 @@
   "skipCi": true,
   "repoType": "github",
   "repoHost": "https://github.com",
-  "projectName": "ESP3D-WEBUI",
+  "projectName": "CoolDraw-WEBUI",
   "projectOwner": "luc-github"
 }

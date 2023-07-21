@@ -1,4 +1,4 @@
-var ESP3D_authentication = false;
+var CoolDraw_authentication = false;
 var page_id = "";
 var convertDHT2Fahrenheit = false;
 var ws_source;
@@ -7,7 +7,7 @@ var log_off = false;
 var async_webcommunication = false;
 var websocket_port = 0;
 var websocket_ip = "";
-var esp_hostname = "ESP3D WebUI";
+var esp_hostname = "CoolDraw WebUI";
 var EP_HOSTNAME;
 var EP_STA_SSID;
 var EP_STA_PASSWORD;
@@ -589,7 +589,7 @@ function Set_page_title(page_title) {
 
 function initUI() {
   console.log("Init UI");
-  if (ESP3D_authentication) connectdlg(false);
+  if (CoolDraw_authentication) connectdlg(false);
   AddCmd(display_boot_progress);
   //initial check
   if (
@@ -623,7 +623,7 @@ function initUI() {
 
 function initUI_2() {
   AddCmd(display_boot_progress);
-  //get all settings from ESP3D
+  //get all settings from CoolDraw
   console.log("Get settings");
   //query settings but do not update list in case wizard is showed
   refreshSettings(true);
@@ -780,7 +780,7 @@ function process_socket_response(msg) {
       process_flowdRate(msg);
     }
 
-    if (msg.startsWith("[esp3d]")) {
+    if (msg.startsWith("[CoolDraw]")) {
       process_Custom(msg); // handles custom messages sent via M118
     }
     if (msg.startsWith("ok")) {

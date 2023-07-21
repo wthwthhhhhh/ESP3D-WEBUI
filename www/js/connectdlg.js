@@ -63,8 +63,8 @@ function getFWdata(response) {
     if (sublist.length != 2) {
         return false;
     }
-    if ((sublist[0].trim() == "authentication") && (sublist[1].trim() == "yes")) ESP3D_authentication = true;
-    else ESP3D_authentication = false;
+    if ((sublist[0].trim() == "authentication") && (sublist[1].trim() == "yes")) CoolDraw_authentication = true;
+    else CoolDraw_authentication = false;
     //async communications
     if (tlist.length > 6) {
         sublist = tlist[6].split(":");
@@ -108,7 +108,7 @@ function getFWdata(response) {
 function connectsuccess(response) {
     if (getFWdata(response)) {
         console.log("Fw identification:" + response);
-        if (ESP3D_authentication) {
+        if (CoolDraw_authentication) {
             closeModal("Connection successful");
             document.getElementById('menu_authentication').style.display = 'inline';
             logindlg(initUI, true);

@@ -36,4 +36,4 @@
 * Update German language thanks @Wesie
 * Update German language thanks @duramson
 
-**Full Changelog**: https://github.com/luc-github/ESP3D-WEBUI/compare/v2.1...V2.1.1
+**Full Changelog**: https://github.com/luc-github/CoolDraw-WEBUI/compare/v2.1...V2.1.1

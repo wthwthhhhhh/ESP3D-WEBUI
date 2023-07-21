@@ -1,6 +1,6 @@
 {
-  "name": "ESP3D-WebUI",
-  "description": "Web UI for ESP3D",
+  "name": "CoolDraw-WebUI",
+  "description": "Web UI for CoolDraw",
   "devDependencies": {
     "del": "latest",
     "deprecated": "latest",
@@ -24,7 +24,7 @@
     "jshint": "latest",
     "merge-stream": "latest"
   },
-  "repository": "https://github.com/luc-github/ESP3D-WEBUI",
+  "repository": "https://github.com/luc-github/CoolDraw-WEBUI",
   "author": "Luc LEBOSSE",
   "license": "(ISC OR GPL-3.0)",
   "dependencies": {

@@ -296,7 +296,7 @@ function process_grbl_status(response) {
     var tab1 = response.split("|");
     if (tab1.length > 1) {
         var tab2 = tab1[0].replace("<", "");
-        document.getElementById("grbl_status").innerHTML = tab2;
+        document.getElementById("grbl_status").innerHTML = tab2.replace("run","运行中").replace("hold","暂停").replace("alarm","停止").replace("idle","空闲");
         if (tab2.toLowerCase().startsWith("run")) {
             grbl_error_msg = "";
             document.getElementById('sd_resume_btn').style.display = "none";
